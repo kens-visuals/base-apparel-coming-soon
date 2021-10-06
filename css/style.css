@@ -18,9 +18,9 @@ body {
   grid-template-rows: 1fr auto; }
 
 .container {
-  max-width: 450px;
+  max-width: 650px;
   margin: 0 auto; }
-  @media (min-width: 1140px) {
+  @media (min-width: 800px) {
     .container {
       width: 100%;
       max-width: unset;
@@ -39,13 +39,13 @@ body {
 .base {
   display: grid;
   grid-template-rows: max-content auto max-content; }
-  @media (min-width: 1140px) {
+  @media (min-width: 800px) {
     .base {
       height: 100vh;
       grid-template-columns: 1fr 61rem; } }
   .base__logo-container {
     grid-row: 1 / 2; }
-    @media (min-width: 1140px) {
+    @media (min-width: 800px) {
       .base__logo-container {
         width: 80%;
         grid-row: 1 / 2;
@@ -53,7 +53,7 @@ body {
   .base__logo {
     width: 27%;
     display: block; }
-    @media (min-width: 1140px) {
+    @media (min-width: 800px) {
       .base__logo {
         margin-top: 1rem; } }
   .base__img-container {
@@ -61,16 +61,16 @@ body {
     background-image: url(../images/hero-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     grid-row: 2 / 2; }
-    @media (min-width: 1140px) {
+    @media (min-width: 800px) {
       .base__img-container {
         background-image: url(../images/hero-desktop.jpg);
         grid-row: 1 / -1;
         grid-column: 2 / -1; } }
   .base__content {
     text-align: center; }
-    @media (min-width: 1140px) {
+    @media (min-width: 800px) {
       .base__content {
         text-align: left;
         grid-column: 1 / 2; } }
@@ -81,7 +81,7 @@ body {
     letter-spacing: 1.2rem;
     line-height: 4.2rem;
     margin: 3.5rem 0 1.5rem 0; }
-    @media (min-width: 1140px) {
+    @media (min-width: 800px) {
       .base__heading {
         font-size: 6.5rem;
         line-height: 7rem;
@@ -96,7 +96,7 @@ body {
     font-weight: 600;
     line-height: 2rem;
     margin-bottom: 3.5rem; }
-    @media (min-width: 1140px) {
+    @media (min-width: 800px) {
       .base__text {
         width: 75%;
         font-size: 1.6rem;
@@ -104,7 +104,7 @@ body {
   .base__form {
     width: 100%;
     position: relative; }
-    @media (min-width: 1140px) {
+    @media (min-width: 800px) {
       .base__form {
         width: 77%; } }
   .base__input {
@@ -116,7 +116,7 @@ body {
     font-family: "Josefin Sans", sans-serif;
     font-size: 1.4rem;
     padding: 1.5rem 2.5rem; }
-    @media (min-width: 1140px) {
+    @media (min-width: 800px) {
       .base__input {
         font-size: 1.6rem;
         padding: 1.8rem 3rem; } }
@@ -131,7 +131,7 @@ body {
     right: 0;
     box-shadow: rgba(219, 136, 136, 0.5) 0px 10px 20px 0px;
     transition: all 0.2s; }
-    @media (min-width: 1140px) {
+    @media (min-width: 800px) {
       .base__button {
         width: 22%; } }
     .base__button:hover {
@@ -142,7 +142,7 @@ body {
   font-size: 1rem;
   text-align: center;
   margin: 15rem 0 0 0; }
-  @media (min-width: 1140px) {
+  @media (min-width: 800px) {
     .attribution {
       text-align: left; } }
   .attribution__link:link, .attribution__link:visited {

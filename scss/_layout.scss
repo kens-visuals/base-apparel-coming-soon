@@ -1,8 +1,8 @@
 .container {
-  max-width: 450px;
+  max-width: 650px;
   margin: 0 auto;
 
-  @media (min-width: 1140px) {
+  @media (min-width: 800px) {
     width: 100%;
     max-width: unset;
     background-image: url(../images/bg-pattern-desktop.svg);
