@@ -1,7 +1,22 @@
 .container {
   max-width: 450px;
+  margin: 0 auto;
+
+  @media (min-width: 1140px) {
+    width: 100%;
+    max-width: unset;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-size: contain;
+  }
 }
 
 .base__container {
   padding: 3rem;
+
+  @media (min-width: 1140px) {
+    width: 80%;
+    padding: 6rem 0 0 8rem;
+    justify-self: center;
+    align-self: center;
+  }
 }

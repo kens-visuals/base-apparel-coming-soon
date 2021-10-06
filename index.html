@@ -23,23 +23,11 @@
   <body>
     <div class="container">
       <main class="base">
-        <div class="base__container">
-          <img src="./images/logo.svg" alt="logo" class="base__logo" />
-        </div>
+        <div class="base__img-container"></div>
 
-        <picture>
-          <source
-            class="base__img"
-            srcset="./images/hero-desktop.jpg"
-            media="(min-width: 1140px)"
-            aria-label="female model portrait"
-          />
-          <img
-            class="base__img"
-            src="./images/hero-mobile.jpg"
-            alt="female model portrait"
-          />
-        </picture>
+        <header class="base__logo-container base__container">
+          <img src="./images/logo.svg" alt="logo" class="base__logo" />
+        </header>
 
         <div class="base__content base__container">
           <h1 class="base__heading">
@@ -67,24 +55,23 @@
               />
             </button>
           </form>
+          <footer class="attribution">
+            Challenge by
+            <a
+              class="attribution__link"
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by
+            <a
+              class="attribution__link"
+              href="https://github.com/kens-visuals"
+              target="_blank"
+              >Kens-Visuals</a
+            >.
+          </footer>
         </div>
       </main>
-
-      <footer class="attribution">
-        Challenge by
-        <a
-          class="attribution__link"
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a
-          class="attribution__link"
-          href="https://github.com/kens-visuals"
-          target="_blank"
-          >Kens-Visuals</a
-        >.
-      </footer>
     </div>
   </body>
 </html>
