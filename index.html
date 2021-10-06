@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="script.js"></script>
 
     <title>Frontend Mentor | Base Apparel Coming Soon Page</title>
   </head>
@@ -38,14 +39,18 @@
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <form action="#" class="base__form">
+          <form action="#" class="base__form js-form">
             <input
-              type="email"
               name="email"
-              class="base__input"
+              class="base__input js-input"
               placeholder="Email Address"
-              required
               aria-label="Email input"
+            />
+            <img
+              class="base__button--error js__error-icon"
+              src="./images/icon-error.svg"
+              alt="error"
+              aria-hidden="true"
             />
             <button class="base__button" aria-label="Submit button">
               <img
@@ -55,6 +60,9 @@
               />
             </button>
           </form>
+
+          <p class="base__error js__error-text"></p>
+
           <footer class="attribution">
             Challenge by
             <a

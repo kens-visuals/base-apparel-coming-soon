@@ -13,19 +13,20 @@ body {
   height: 100vh;
   font-size: 1.6rem;
   font-family: "Josefin Sans", sans-serif;
-  background-image: linear-gradient(135deg, white, #fff5f5);
   display: grid;
   grid-template-rows: 1fr auto; }
 
 .container {
-  max-width: 650px;
+  max-width: 800px;
+  background-image: linear-gradient(135deg, white, #fff5f5);
   margin: 0 auto; }
   @media (min-width: 800px) {
     .container {
       width: 100%;
       max-width: unset;
-      background-image: url(../images/bg-pattern-desktop.svg);
-      background-size: contain; } }
+      background-image: url(../images/bg-pattern-desktop.svg), linear-gradient(135deg, white, #fff5f5);
+      background-size: auto, auto;
+      background-repeat: repeat; } }
 
 .base__container {
   padding: 3rem; }
@@ -63,6 +64,11 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     grid-row: 2 / 2; }
+    @media (min-width: 600px) {
+      .base__img-container {
+        background-image: url(../images/hero-desktop.jpg);
+        background-position: top 10% left;
+        padding: 20rem; } }
     @media (min-width: 800px) {
       .base__img-container {
         background-image: url(../images/hero-desktop.jpg);
@@ -102,10 +108,20 @@ body {
         font-size: 1.6rem;
         line-height: 3rem; } }
   .base__form {
-    position: relative; }
+    position: relative;
+    margin-bottom: 1rem; }
     @media (min-width: 800px) {
       .base__form {
         width: 77%; } }
+  .base__error {
+    text-align: left;
+    color: #f96262;
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+    padding-left: 2.5rem; }
+    @media (min-width: 800px) {
+      .base__error {
+        padding-left: 3rem; } }
   .base__input {
     width: 100%;
     color: #ce9797;
@@ -131,6 +147,17 @@ body {
     top: 0;
     right: 0;
     transition: all 0.2s; }
+    @media (hover: hover) {
+      .base__button:hover {
+        background-image: linear-gradient(135deg, #f1dada, #f7bbbb); } }
+    .base__button--error {
+      display: none;
+      position: absolute;
+      top: 25%;
+      right: 25%; }
+      @media (min-width: 800px) {
+        .base__button--error {
+          top: 30%; } }
     @media (min-width: 800px) {
       .base__button {
         width: 22%; } }
@@ -141,11 +168,11 @@ body {
 
 .attribution {
   font-size: 1rem;
-  text-align: center;
-  margin: 15rem 0 0 0; }
+  text-align: center; }
   @media (min-width: 800px) {
     .attribution {
-      text-align: left; } }
+      text-align: left;
+      margin: 10rem 0 0 0; } }
   .attribution__link:link, .attribution__link:visited {
     text-transform: uppercase;
     color: #ce9797;

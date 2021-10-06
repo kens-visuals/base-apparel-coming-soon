@@ -34,6 +34,12 @@
     background-position: top center;
     grid-row: 2 / 2;
 
+    @media (min-width: 600px) {
+      background-image: url(../images/hero-desktop.jpg);
+      background-position: top 10% left;
+      padding: 20rem;
+    }
+
     @media (min-width: 800px) {
       background-image: url(../images/hero-desktop.jpg);
       grid-row: 1 / -1;
@@ -87,9 +93,22 @@
 
   &__form {
     position: relative;
+    margin-bottom: 1rem;
 
     @media (min-width: 800px) {
       width: 77%;
+    }
+  }
+
+  &__error {
+    text-align: left;
+    color: $color-primary--dark;
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+    padding-left: 2.5rem;
+
+    @media (min-width: 800px) {
+      padding-left: 3rem;
     }
   }
 
@@ -122,6 +141,23 @@
     right: 0;
     transition: all 0.2s;
 
+    @media (hover: hover) {
+      &:hover {
+        background-image: $gradient-primary--hover;
+      }
+    }
+
+    &--error {
+      display: none;
+      position: absolute;
+      top: 25%;
+      right: 25%;
+
+      @media (min-width: 800px) {
+        top: 30%;
+      }
+    }
+
     @media (min-width: 800px) {
       width: 22%;
     }
@@ -138,10 +174,10 @@
 .attribution {
   font-size: 1rem;
   text-align: center;
-  margin: 15rem 0 0 0;
 
   @media (min-width: 800px) {
     text-align: left;
+    margin: 10rem 0 0 0;
   }
 
   &__link:link,

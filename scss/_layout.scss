@@ -1,12 +1,14 @@
 .container {
-  max-width: 650px;
+  max-width: 800px;
+  background-image: $gradient-secondary;
   margin: 0 auto;
 
   @media (min-width: 800px) {
     width: 100%;
     max-width: unset;
-    background-image: url(../images/bg-pattern-desktop.svg);
-    background-size: contain;
+    background-image: url(../images/bg-pattern-desktop.svg), $gradient-secondary;
+    background-size: auto, auto;
+    background-repeat: repeat;
   }
 }
 
