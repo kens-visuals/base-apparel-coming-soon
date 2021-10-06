@@ -5,6 +5,7 @@
   @media (min-width: 800px) {
     height: 100vh;
     grid-template-columns: 1fr 61rem;
+    grid-auto-rows: auto;
   }
 
   &__logo-container {
@@ -12,7 +13,6 @@
 
     @media (min-width: 800px) {
       width: 80%;
-      grid-row: 1 / 2;
       grid-column: 1 / 2;
     }
   }
@@ -27,17 +27,15 @@
   }
 
   &__img-container {
-    padding: 13rem 0;
+    padding: 13rem;
     background-image: url(../images/hero-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-
     grid-row: 2 / 2;
 
     @media (min-width: 800px) {
       background-image: url(../images/hero-desktop.jpg);
-
       grid-row: 1 / -1;
       grid-column: 2 / -1;
     }
@@ -56,8 +54,8 @@
     color: $color-secondary;
     text-transform: uppercase;
     font-size: 3.9rem;
-    letter-spacing: 1.2rem;
     line-height: 4.2rem;
+    letter-spacing: 1.2rem;
     margin: 3.5rem 0 1.5rem 0;
 
     @media (min-width: 800px) {
@@ -88,7 +86,6 @@
   }
 
   &__form {
-    width: 100%;
     position: relative;
 
     @media (min-width: 800px) {
@@ -116,21 +113,24 @@
     width: 20%;
     height: 100%;
     background-image: $gradient-primary;
+    outline: none;
     border: none;
     border-radius: 5rem;
+    box-shadow: rgba($color-primary, 0.5) 0px 15px 20px;
     position: absolute;
     top: 0;
     right: 0;
-    box-shadow: rgba(219, 136, 136, 0.5) 0px 10px 20px 0px;
     transition: all 0.2s;
 
     @media (min-width: 800px) {
       width: 22%;
     }
 
-    &:hover {
-      cursor: pointer;
-      box-shadow: rgba(219, 136, 136, 0.7) 0px 10px 20px 0px;
+    @media (hover: hover) {
+      &:hover {
+        cursor: pointer;
+        box-shadow: rgba($color-primary, 0.7) 0px 15px 20px;
+      }
     }
   }
 }
