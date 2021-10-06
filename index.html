@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title>Frontend Mentor | Base Apparel Coming Soon Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="base">
+        <div class="base__container">
+          <img src="./images/logo.svg" alt="logo" class="base__logo" />
+        </div>
+
+        <picture>
+          <source
+            class="base__img"
+            srcset="./images/hero-desktop.jpg"
+            media="(min-width: 1140px)"
+            aria-label="female model portrait"
+          />
+          <img
+            class="base__img"
+            src="./images/hero-mobile.jpg"
+            alt="female model portrait"
+          />
+        </picture>
+
+        <div class="base__content base__container">
+          <h1 class="base__heading">
+            <span class="base__heading--highlighted">We're</span> coming soon
+          </h1>
+          <p class="base__text">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form action="#" class="base__form">
+            <input
+              type="email"
+              name="email"
+              class="base__input"
+              placeholder="Email Address"
+              required
+              aria-label="Email input"
+            />
+            <button class="base__button" aria-label="Submit button">
+              <img
+                src="./images/icon-arrow.svg"
+                alt="arrow"
+                aria-hidden="true"
+              />
+            </button>
+          </form>
+        </div>
+      </main>
+
+      <footer class="attribution">
+        Challenge by
+        <a
+          class="attribution__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          class="attribution__link"
+          href="https://github.com/kens-visuals"
+          target="_blank"
+          >Kens-Visuals</a
+        >.
+      </footer>
+    </div>
+  </body>
+</html>
