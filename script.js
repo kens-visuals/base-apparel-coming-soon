@@ -18,6 +18,6 @@ form.addEventListener('submit', (e) => {
   ) {
     e.preventDefault();
     errorText.innerHTML = 'Please provide a valid email';
-    errorIcon.style.display = 'block';
+    errorIcon.style.display = 'inline-block';
   }
 });

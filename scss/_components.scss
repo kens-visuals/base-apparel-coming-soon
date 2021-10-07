@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: max-content auto max-content;
 
-  @media (min-width: 800px) {
+  @media (min-width: 900px) {
     height: 100vh;
     grid-template-columns: 1fr 61rem;
     grid-auto-rows: auto;
@@ -11,7 +11,7 @@
   &__logo-container {
     grid-row: 1 / 2;
 
-    @media (min-width: 800px) {
+    @media (min-width: 900px) {
       width: 80%;
       grid-column: 1 / 2;
     }
@@ -21,7 +21,7 @@
     width: 27%;
     display: block;
 
-    @media (min-width: 800px) {
+    @media (min-width: 900px) {
       margin-top: 1rem;
     }
   }
@@ -40,7 +40,7 @@
       padding: 20rem;
     }
 
-    @media (min-width: 800px) {
+    @media (min-width: 900px) {
       background-image: url(../images/hero-desktop.jpg);
       grid-row: 1 / -1;
       grid-column: 2 / -1;
@@ -50,7 +50,7 @@
   &__content {
     text-align: center;
 
-    @media (min-width: 800px) {
+    @media (min-width: 900px) {
       text-align: left;
       grid-column: 1 / 2;
     }
@@ -64,11 +64,16 @@
     letter-spacing: 1.2rem;
     margin: 3.5rem 0 1.5rem 0;
 
-    @media (min-width: 800px) {
-      font-size: 6.5rem;
+    @media (min-width: 600px) {
+      width: 50%;
+      font-size: 6.4rem;
       line-height: 7rem;
+      margin: 1.5rem auto;
+    }
+
+    @media (min-width: 900px) {
       letter-spacing: 1.8rem;
-      margin: 6rem 0 1.5rem 0;
+      margin: 4.5rem 0 1.8rem 0;
     }
 
     &--highlighted {
@@ -82,12 +87,20 @@
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 2rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 4.5rem;
 
-    @media (min-width: 800px) {
+    @media (min-width: 600px) {
+      width: 70%;
+      margin: 4.5rem auto;
+    }
+
+    @media (min-width: 900px) {
       width: 75%;
       font-size: 1.6rem;
-      line-height: 3rem;
+      font-weight: normal;
+      line-height: 2.8rem;
+      margin: 0;
+      margin-bottom: 4.5rem;
     }
   }
 
@@ -95,8 +108,15 @@
     position: relative;
     margin-bottom: 1rem;
 
-    @media (min-width: 800px) {
+    @media (min-width: 600px) {
+      width: 70%;
+      margin: 5rem auto 9.5rem auto;
+    }
+
+    @media (min-width: 900px) {
       width: 77%;
+      margin: 0;
+      margin-bottom: 1rem;
     }
   }
 
@@ -107,14 +127,14 @@
     margin-bottom: 5rem;
     padding-left: 2.5rem;
 
-    @media (min-width: 800px) {
+    @media (min-width: 900px) {
       padding-left: 3rem;
     }
   }
 
   &__input {
     width: 100%;
-    color: $color-primary;
+    color: $color-secondary;
     background-color: transparent;
     border: 0.1rem solid $color-primary;
     border-radius: 10rem;
@@ -122,7 +142,7 @@
     font-size: 1.4rem;
     padding: 1.5rem 2.5rem;
 
-    @media (min-width: 800px) {
+    @media (min-width: 900px) {
       font-size: 1.6rem;
       padding: 1.8rem 3rem;
     }
@@ -147,18 +167,19 @@
       }
     }
 
-    &--error {
+    &--error-icon {
       display: none;
       position: absolute;
       top: 25%;
       right: 25%;
+      animation: flash 0.4s ease-in-out infinite alternate;
 
-      @media (min-width: 800px) {
+      @media (min-width: 900px) {
         top: 30%;
       }
     }
 
-    @media (min-width: 800px) {
+    @media (min-width: 900px) {
       width: 22%;
     }
 
@@ -174,8 +195,9 @@
 .attribution {
   font-size: 1rem;
   text-align: center;
+  margin: 18rem 0 0 0;
 
-  @media (min-width: 800px) {
+  @media (min-width: 900px) {
     text-align: left;
     margin: 10rem 0 0 0;
   }
@@ -190,5 +212,15 @@
   &__link:hover,
   &__link:active {
     color: $color-secondary;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

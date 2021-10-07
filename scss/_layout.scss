@@ -1,9 +1,9 @@
 .container {
-  max-width: 800px;
+  max-width: 85rem;
   background-image: $gradient-secondary;
   margin: 0 auto;
 
-  @media (min-width: 800px) {
+  @media (min-width: 900px) {
     width: 100%;
     max-width: unset;
     background-image: url(../images/bg-pattern-desktop.svg), $gradient-secondary;
@@ -15,7 +15,7 @@
 .base__container {
   padding: 3rem;
 
-  @media (min-width: 1140px) {
+  @media (min-width: 900px) {
     width: 80%;
     padding: 6rem 0 0 8rem;
     align-self: center;
