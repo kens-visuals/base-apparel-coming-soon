@@ -33,8 +33,6 @@ body {
   background-image: $gradient-secondary;
   font-size: 1.6rem;
   font-family: $font-primary;
-  display: grid;
-  grid-template-rows: 1fr auto;
 
   @media (min-width: 900px) {
     background-image: url(../images/bg-pattern-desktop.svg), $gradient-secondary;
