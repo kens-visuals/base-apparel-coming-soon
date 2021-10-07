@@ -11,14 +11,19 @@ html {
 
 body {
   min-height: 100vh;
+  background-image: linear-gradient(135deg, white, #fff5f5);
   font-size: 1.6rem;
   font-family: "Josefin Sans", sans-serif;
   display: grid;
   grid-template-rows: 1fr auto; }
+  @media (min-width: 900px) {
+    body {
+      background-image: url(../images/bg-pattern-desktop.svg), linear-gradient(135deg, white, #fff5f5);
+      background-size: auto, auto;
+      background-repeat: repeat; } }
 
 .container {
   max-width: 85rem;
-  background-image: linear-gradient(135deg, white, #fff5f5);
   margin: 0 auto; }
   @media (min-width: 900px) {
     .container {
